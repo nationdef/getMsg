@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>getmsg</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   <servlet>
+  	<servlet-name>comg</servlet-name>
+  	<servlet-class>com.lgf.getmsg.ComServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comg</servlet-name>
+  	<url-pattern>/c</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<servlet-name>trw</servlet-name>
+  	<servlet-class>com.lgf.getmsg.getServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>trw</servlet-name>
+  	<url-pattern>/trw</url-pattern>
+  </servlet-mapping>
+     <servlet>
+  	<servlet-name>xxnjjtrw</servlet-name>
+  	<servlet-class>com.lgf.getmsg.getXianNjjServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>xxnjjtrw</servlet-name>
+  	<url-pattern>/xxnjj</url-pattern>
+  </servlet-mapping>
+     <servlet>
+  	<servlet-name>s</servlet-name>
+  	<servlet-class>com.lgf.getmsg.ShowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s</servlet-name>
+  	<url-pattern>/s</url-pattern>
+  </servlet-mapping>
+</web-app>
